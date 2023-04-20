@@ -1,0 +1,115 @@
+* {
+    margin: 0.1%;
+    font-size: 0.75vh;
+}
+
+.contenedor {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6vh 6vh 90vw;
+}
+
+body {
+    background-color: #252525;
+    justify-content: center;
+    font-family: "Segoe UI", Helvetica, sans-serif;
+}
+
+.contenedor {
+    position: static;
+}
+
+.Grid {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    font-family: 'Zen Dots', cursiva;
+    justify-content: flex-start;
+    font-size: 2.5vh;
+    align-items: flex-end;
+}
+
+.logos {
+    grid-column: 3/5;
+    grid-row: 1/1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+.logos img {
+    width: 5vh;
+}
+
+.menu {
+    grid-column: 1 / 5;
+    grid-row: 2 / 2;
+    background-color: #101010;
+    position: sticky;
+    top: 0.05vw;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Hover {
+    transition: 0.5s ease-in;
+    color: #ffffff;
+    font-size: 1.5vmin;
+    text-decoration: none;
+    padding: 1vmin 0;
+    margin: 0 20px;
+}
+
+.fondo {
+    background-color: #F6DE26;
+    color: black;
+}
+
+.Hover:hover {
+    background-color: #F6DE26;
+    color: #252525;
+}
+
+.image-gallery {
+    grid-column: 1/4;
+    grid-row: 3/3;
+    width: 133%;
+}
+
+.image-card {
+    display: inline-block;
+    width: 31%;
+    margin: 1.5% 0 0 1.5%;
+    padding-top: 21%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-card:hover {
+    -webkit-box-shadow: 0 0 8px 0 #F6DE26;
+    box-shadow: 0 0 8px 0 #F6DE26;
+}
+
+.no-event {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: 100%;
+}
+
